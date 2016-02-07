@@ -50,20 +50,21 @@ module.exports = function (config) {
             './**/*.js': ['coverage']
         },
 
-        reporters: ['dots', 'jenkins', 'coverage', 'progress'],
+//        /* the followings cause weird/ugly console output */
+//        reporters: ['dots', 'jenkins', 'coverage', 'progress'],
+//
+//        jenkinsReporter: {
+//
+//            outputFile: '../target/test-results/karma/TESTS-results.xml'
+//        },
 
-        jenkinsReporter: {
-            
-            outputFile: '../target/test-results/karma/TESTS-results.xml'
-        },
-
-        coverageReporter: {
-            
-            dir: '../target/test-results/coverage',
-            reporters: [
-                {type: 'lcov', subdir: 'report-lcov'}
-            ]
-        },
+//        coverageReporter: {
+//
+//            dir: '../target/test-results/coverage',
+//            reporters: [
+//                {type: 'lcov', subdir: 'report-lcov'}
+//            ]
+//        },
 
         // web server port
         port: 9876,

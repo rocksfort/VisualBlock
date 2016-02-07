@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 angular.module('visualBlockApp')
     .config(function ($stateProvider) {
