@@ -1,0 +1,48 @@
+<div id="calculator-body">
+	<form name="display-form">
+		<div id="indicators">
+			<input type="text" name="display" id="display" ng-model="expression" ng-disabled="true"></input>
+		</div>
+		
+		<div id="controls">
+			<table>
+				<tr id="main-controls">
+			    	<td><button id="backspace" class="input-ctrl" ng-click="vm.backSpace()" name="">&lt;&lt;&lt;</button></td>
+			    	<td><button id="ans" class="input-ctrl" ng-click="expression = ans" name="ans">ans</button></td>
+			    	<td><button id="c-ce" class="input-ctrl" ng-click="expression = 0" name="">C-CE</button></td>
+			    	<td><div class="no-btn input-ctrl" ng-disabled="true"></div></td>
+			    </tr>
+				<tr class="">
+			    	<td><button id="1" class="input-ctrl" ng-click="vm.digit('1')">1</button></td>
+			    	<td><button id="2" class="input-ctrl" ng-click="vm.digit('2')">2</button></td>
+			    	<td><button id="3" class="input-ctrl" ng-click="vm.digit('3')">3</button></td>
+			    	<td><button id="add" class="input-ctrl" ng-click="vm.operator('+')">+</button></td>
+			    </tr>
+				<tr id="main-controls">
+			    	<td><button id="4" class="input-ctrl" ng-click="vm.digit('4')">4</button></td>
+			    	<td><button id="5" class="input-ctrl" ng-click="vm.digit('5')">5</button></td>
+			    	<td><button id="6" class="input-ctrl" ng-click="vm.digit('6')">6</button></td>
+			    	<td><button id="substract" class="input-ctrl" ng-click="vm.operator('-')">-</button></td>
+			    </tr>
+				<tr id="main-controls">
+			    	<td><button id="7" class="input-ctrl" ng-click="vm.digit('7')">7</button></td>
+			    	<td><button id="8" class="input-ctrl" ng-click="vm.digit('8')">8</button></td>
+			    	<td><button id="9" class="input-ctrl" ng-click="vm.digit('9')">9</button></td>
+			    	<td><button id="multiply" class="input-ctrl" ng-click="vm.operator('*')">*</button></td>
+			    </tr>
+				<tr id="main-controls">
+			    	<td><button id="0" class="input-ctrl" ng-click="vm.digit('0')">0</button></td>
+			    	<td><button id="dot" class="input-ctrl" ng-click="vm.dot()">.</button></td>
+			    	<td><div class="no-btn input-ctrl" ng-disabled="true"></div></td>
+			    	<td><button id="divide" class="input-ctrl" ng-click="vm.operator('/')">/</button></td>
+			    </tr>
+				<tr id="main-controls">
+			    	<td><div class="no-btn input-ctrl" ng-disabled="true"></div></td>
+			    	<td><button id="pow" class="input-ctrl" ng-click="vm.operator('>')">pow</button></td>
+			    	<td><button id="root" class="input-ctrl" ng-click="vm.operator('<')">root</button></td>
+			    	<td><button id="submit" class="input-ctrl" ng-click="vm.submit()">&#61;</button></td>
+			    </tr>
+			</table>
+		</div>
+	</form>
+</div>

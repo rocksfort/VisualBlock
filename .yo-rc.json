@@ -1,0 +1,25 @@
+{
+  "generator-jhipster": {
+    "baseName": "VisualBlock",
+    "packageName": "visualblock",
+    "packageFolder": "visualblock",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "eac2573c95643fec5a8bb975c0b4315275c30c61",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ]
+  }
+}
